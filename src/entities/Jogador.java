@@ -1,5 +1,6 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Jogador {
@@ -7,13 +8,10 @@ public class Jogador {
     private int vitorias;
     private List<Carta> cartas;
 
-    public Jogador(String nome, int vitorias, List<Carta> cartas) {
+    public Jogador(String nome) {
         this.nome = nome;
-        this.vitorias = vitorias;
-        this.cartas = cartas;
-    }
-
-    public Jogador(String blaze) {
+        this.vitorias = 0;
+        this.cartas = new ArrayList<>();
     }
 
     public int getVitorias() {
